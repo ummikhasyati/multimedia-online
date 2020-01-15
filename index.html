@@ -1,34 +1,254 @@
-<html>
-<head>
-<style>
-body {
-  background-color: #FF69B4;
+<html lang ="en">
+    <head>
+      <style type="text/css">
+        /*Start Main Rules*/
+body{
+
 }
+.container{
+  width:1170px;
+  margin:auto;
+}
+.clearfix{
+  clear:both;
+}
+
+/*End Main Rules*/
+
+/* Start Header*/
+.header .slider{
+  background-image:url('assets/bg.jpg');
+  background-size:cover;
+  background-color:#eee;
+  height:600px;
+}
+.header .slider .intro {
+  padding-top:200px;  
+  text-align:center;
+  color:#6a6e71;
+}
+.header .slider .intro h2{
+  margin:0 auto;
+  font-size:50px;
+  width:600px;
+  border-top:4px solid #6a6e71;
+  border-bottom:4px solid #6a6e71;
+  padding:5px 0;
+  }
+.header .nav{
+  background-color:#252f31;
+  color:#fff;
+  overflow:hidden;
+}
+.header .nav h2 {
+  float:left;
+  text-transform:uppercase;
+}
+.header .nav h2 span {
+  color:#2ecc71;
+  }
+
+.header .nav ul {
+  list-style:none;
+  padding-left:0;
+  float:right;
+  overflow:hidden;
+}
+
  
-h1 {
-  text-decoration: underline;
-
+.header .nav ul li {
+  padding:10px;
+  float:left;
+}
+.header .nav ul li a{
+  color:#fff;
+  text-decoration:none;
+}
+.header .nav ul li.active a,
+.header .nav ul li a:hover{
+  color:#30b576;
 }
 
-</style> 
-<title>Home</title>
-</head>
-<body>
-<center>
-<h1>Hasil Praktikum Multimedia Online</h1> </center>
-<p>Ummi Khasyati Ramdiana</p>
-<p>17000160137</p>
-<ol>
-	<li><p><a href="Praktikum_1_1700016137.html">Praktikum 1 - Canvas HTML</a></p></li>
-	<li><p><a href="Praktikum_2_1700016137.html">Praktikum 2 - Interaktivitas</a></p></li>
-	<li><p><a href="Praktikum_3_1700016137.html">Praktikum 3 - Vektor Pattern</a></p></li>
-	<li><p><a href="Praktikum_4_1700016137.html">Praktikum 4 - Puzzle</a></p></li>
-	<li><p><a href="Praktikum_5_1700016137.html">Praktikum 5 - Animation</a></p></li>
-	<li><p><a href="Praktikum_6_1700016137.html">Praktikum 6 - Audio Visualizer</a></p></li>
-	<li><p><a href="Praktikum_7_1700016137.html">Praktikum 7 - Audio Recording</a></p></li>
-	<li><p><a href="Praktikum_8_1700016137.html">Praktikum 8 - Image Manipulating</a></p></li>
-	<li><p><a href="UTS_MULON_1700016137.html">Ujian Tengah Semester</a></p></li>
-	<li><p><a href="UAS_MULON_1700016137.html">Ujian Akhir Semester</a></p></li>
-</ol>
-</body>
-</html>
+/* End Header */
+
+
+/*Start Portfolio*/
+.portfolio{
+  padding-top:50px;
+  padding-bottom:70px;
+  text-align:center;
+  
+}
+.portfolio h2{
+  line-height:1.7;
+  color:#666;
+}
+.portfolio p{
+  color:#777;
+  margin-bottom:30px;
+}
+.portfolio .work{
+  overflow:hidden;
+  
+} 
+.portfolio .work >div {
+  float:left;
+  width:33.333333%;
+  margin-bottom:10px;
+}
+.portfolio .work >div img {
+  width:92%;
+  margin:10px;
+  padding:3px;
+  background-color:#fff;
+  border:1px solid #ccc;
+  vertical-align:middle;
+  transition: all 2s, transform 1s, box-shadow .5s;
+  
+}
+.portfolio .work >div img:hover{
+  box-shadow: 6px 6px 20px rgba(0,0,0,.6);
+  transform:scale(1.08);
+}
+    
+.portfolio .work >div img:focus{
+  width:30%;
+  transform:none;
+  box-shadow: 12px 12px 25px rgba(0,0,0,.7);
+    
+}
+/*End Portfolio*/
+
+
+/*Start Footer*/
+.footer{
+  background-color: #191e22;
+  color:#6a6e71;
+  padding:20px 0;
+  text-align:center;
+  overflow:hidden;
+}
+
+/*End Footer*/
+
+
+</style>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  </head>
+    <body>
+  <!--Start Header -->
+  <div class="header">
+       <div class="slider"> 
+      <div class ="container">
+       <div class="intro">
+        <h2> MULTIMEDIA ONLINE</h2>
+        <h3> UMMI KHASYATI RAMDIANA - 1700016137</h3>
+     </div>
+    </div> 
+  </div>
+  <div class="nav">
+       <div class="container">
+     <h2><span>MULTIMEDIA ONLINE</span></h2>
+
+       </div>
+  </div>
+  </div>
+  
+  <!--End Header -->
+  
+  
+  <!--Start Portfolio-->
+  
+  <div class="portfolio">
+    <div class="container">
+    <h3>PRATIKUM</h3>
+    
+    <div class="work">
+      <div class="container">
+        <img src="assets/P1.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_1_1700016109.html" class="codepen-link" target="_blank">Praktikum 1</a>
+      </div>
+      </div>
+
+      <div class="container">
+        <img src="assets/P2.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_2_1700016137.html" class="codepen-link" target="_blank">Praktikum 2</a>
+      </div>
+      </div>
+
+      <div class="container">
+        <img src="assets/P3.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_3_1700016137.html" class="codepen-link" target="_blank">Praktikum 3</a>
+      </div>
+      </div>
+
+      <div class="container">
+        <img src="assets/P4.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_4_1700016137.html" class="codepen-link" target="_blank">Praktikum 4</a>
+      </div></div>
+
+      
+      <div class="container">
+        <img src="assets/P5.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_5_1700016137.html" class="codepen-link" target="_blank">Praktikum 5</a>
+      </div></div>
+
+      <div class="container">
+        <img src="assets/P6.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_6_1700016137.html" class="codepen-link" target="_blank">Praktikum 6</a>
+      </div></div>
+
+      <div class="container">
+        <img src="assets/P7.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_7_1700016137.html" class="codepen-link" target="_blank">Praktikum 7</a>
+      </div></div>
+
+      <div class="container">
+        <img src="assets/P8.png" alt="">
+        <div class="button-container">
+      <a href="Praktikum_8_1700016137.html" class="codepen-link" target="_blank">Praktikum 8</a>
+      </div></div>
+
+  </div>
+</div>
+
+<div class="portfolio">
+    <div class="container">
+    <h3>UJIAN</h3>
+    
+    <div class="work">
+      <div class="container">
+        <img src="assets/UTS.png" alt="">
+        <div class="button-container">
+      <a href="UTS_MULON_1700016137.html" class="codepen-link" target="_blank">Ujian Tengah Semester</a>
+      </div>
+      </div>
+
+      <div class="container">
+        <img src="assets/UAS.png" alt="">
+        <div class="button-container">
+      <a href="UAS_MULON_1700016137.html" class="codepen-link" target="_blank">Ujian Akhir Semester</a>
+      </div>
+      </div>
+  </div>
+</div>
+  
+  <!--End Portfolio-->
+  
+  <!--Start Footer -->
+  <div class="footer">
+   <div class="container">
+   <span>UMMI KHASYATI RAMDIANA</span>
+  </div>
+  <!--End Footer -->
+  </body>
+ </html>
